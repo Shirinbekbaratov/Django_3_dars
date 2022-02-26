@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block  title %}
+    <title>Bosh sahifa</title>
+{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for post in Barcha_postlar %}
+    <li>{{ post.text }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
